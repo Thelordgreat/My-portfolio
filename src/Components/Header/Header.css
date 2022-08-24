@@ -1,54 +1,94 @@
-.hero_content{
-    max-width: 85%;
-    margin: 7rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 7rem;
-    color: #F8F9FA;
-    
+.hero_content {
+  max-width: 85%;
+  margin: 7rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7rem;
+  color: #f8f9fa;
 }
 
-.hero_content .hero_texts h1{
-    font-size: 58px;
+.hero_content .hero_texts h1 {
+  font-size: 58px;
 }
 
-.hero_content .hero_texts h4{
-    font-size: 28px;
+.hero_content .hero_texts h4 {
+  font-size: 28px;
 }
 
-.hero_content .hero_texts p{
-    margin: 1rem 0;
+.hero_content .hero_texts p {
+  margin: 1rem 0;
 }
 
-.hero_content .hero_texts div .social_icons{
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: .3rem;
+.hero_content .hero_texts div .social_icons {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
 }
 
-.hero_content .hero_texts div .social_icons .icon{
-    border: 1px solid;
-    font-size: 26px;
-    padding: 4px;
-    border-radius: 100%;
-    cursor: pointer;
+.hero_content .hero_texts div .social_icons .icon {
+  border: 1px solid;
+  font-size: 26px;
+  padding: 4px;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
-.hero_content div img{
-    width: 430px;
-    height: 530px;
-    position: relative;
+.hero_content .hero_img_shadow {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  height: 390px;
+  margin-top: 8.5rem;
+  background-color: #343a40;
 }
 
-.hero_content .hero_img::before{
-    content: '';
-    position: absolute;
-    display: block;
-    top: 191px;
-    width: 430px;
-    height: 450px;
-    background-color: #343A40;
-    border-radius: 4rem 4rem 0 0;
+.hero_content .hero_img_shadow img {
+  width: 100%;
+  height: 530px;
+  transform: translateY(-140px);
+}
+
+@media (max-width: 960px) {
+  .hero_content {
+    max-width: 95%;
+    gap: 0;
+  }
+
+  .hero_content .hero_texts {
+    width: 85%;
+  }
+
+  .hero_content .hero_texts h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_content {
+    flex-direction: column;
+    max-width: 95%;
+    gap: 6rem;
+  }
+
+  .hero_content .hero_img_shadow {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero_content {
+    max-width: 98%;
+  }
+
+  .hero_content .hero_texts {
+    width: 97%;
+  }
+  .hero_content .hero_texts h1 {
+    font-size: 48px;
+  }
+
+  .hero_content .hero_img_shadow {
+    max-width: 95%;
+  }
 }
