@@ -10,7 +10,7 @@ const Header = () => {
         <div className="hero_texts">
           <h4>Hello i'm</h4>
           <h1>Great Okafor</h1>
-          <h4>Front-end Developer</h4>
+          <h4 className="title">Front-end Developer</h4>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum
@@ -19,7 +19,7 @@ const Header = () => {
             suscipit accusantium temporibus.
           </p>
 
-          <div>
+          <div className="bottom">
             <h4>Find Me On</h4>
             <div className="social_icons">
               <FiInstagram className="icon" />

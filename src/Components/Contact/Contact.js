@@ -15,15 +15,15 @@ const Contact = () => {
           <div className="contact_boxes">
             <div className="box">
               <BsHouseDoor className="icon" />
-              <p>insert address</p>
+              <p>Ikeja,Lagos</p>
             </div>
             <div className="box">
               <FiPhoneCall className="icon" />
-              <p>+123-456-789-00</p>
+              <p>+2349055465302</p>
             </div>
             <div className="box">
               <FaRegEnvelope className="icon" />
-              <p>example@gmail.com</p>
+              <p>greatokafor9@gmail.com</p>
             </div>
           </div>
 
