@@ -19,11 +19,12 @@
   padding: 0 35px;
 }
 
-.nav_content .logo {
+.nav_content a .logo {
   font-size: 1.5rem;
   height: 100%;
   display: flex;
   align-items: center;
+  color: #ffffff
 }
 
 .nav_content .logo img {

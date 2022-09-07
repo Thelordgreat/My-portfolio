@@ -5,7 +5,7 @@ import { FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <section>
+    <section id="header">
       <div className="hero_content">
         <div className="hero_texts">
           <div>
