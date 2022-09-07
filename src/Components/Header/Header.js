@@ -8,9 +8,11 @@ const Header = () => {
     <section>
       <div className="hero_content">
         <div className="hero_texts">
-          <h4>Hello i'm</h4>
-          <h1>Great Okafor</h1>
-          <h4 className="title">Front-end Developer</h4>
+          <div>
+            <span>Hello i'm</span>
+            <span>Great Okafor</span>
+            <span className="title">Front-end Developer</span>
+          </div>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum

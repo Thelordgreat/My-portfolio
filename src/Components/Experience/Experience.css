@@ -1,0 +1,96 @@
+.experience_container {
+  width: 100%;
+  background-color: #bd1f36;
+  margin: 2rem auto;
+  padding: 4rem 0 6rem;
+}
+
+.experience_content {
+  width: 80%;
+  margin: auto;
+  max-width: 1440px;
+  position: relative;
+}
+
+.experience_content h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.experience_content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience_content > div .long_line{
+    position: absolute;
+    height: 70%;
+    background-color: #F8F9FA;
+    width: 4px;
+    left: 650px;
+    border-radius: 10px;
+    opacity: .5;
+    z-index: 2;
+}
+
+.experience_content > div .short_line{
+    position: absolute;
+    height: 4px;
+    background-color: #F8F9FA;
+    width: 180px;
+    left: 570px;
+    top: 160px;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.experience_content > div .short_line:nth-child(2){
+    top: 326px;
+}
+
+.experience_content > div .short_line:nth-child(3){
+    top: 500px;
+}
+
+.experience_content > div .experience {
+  display: flex;
+}
+
+.experience_content > div .experience .description {
+  flex: 1;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.experience_content > div .experience .company_space {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience_content > div .experience .company_space > .company {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.experience_content > div .btn{
+    margin: 3rem auto 0;
+}
+
+.experience_content > div .btn a {
+  background-color: #343A40;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 8px;
+}

@@ -1,0 +1,37 @@
+.skill_content {
+  width: 80%;
+  margin: auto;
+}
+
+.skill_content h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.skill_content .skill_slider {
+  margin: 5rem 0;
+  padding-bottom: 4rem;
+}
+
+.skill_content .skill_slider .slide {
+  width: 300px;
+  height: 200px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.25);
+  user-select: none;
+}
+
+.skill_content .skill_slider .slide img {
+  scale: 0.7;
+}
+
+/* .swiper-pagination-bullet-active .swiper-pagination-bullet {
+  background: #85182a;
+} */

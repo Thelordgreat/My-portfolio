@@ -8,16 +8,28 @@
   color: #f8f9fa;
 }
 
-.hero_content .hero_texts h1 {
-  font-size: 58px;
+.hero_content .hero_texts > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
 }
 
-.hero_content .hero_texts h4 {
+.hero_content .hero_texts > div > span:nth-child(2) {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+.hero_content .hero_texts > div > span:nth-child(1),
+.hero_content .hero_texts > div > span:nth-child(3) {
   font-size: 28px;
+  font-weight: 400;
 }
 
 .hero_content .hero_texts p {
   margin: 1rem 0;
+}
+
+.hero_content .hero_texts h4{
+  margin-bottom: 1rem;
 }
 
 .hero_content .hero_texts div .social_icons {
@@ -59,7 +71,7 @@
     width: 85%;
   }
 
-  .hero_content .hero_texts h1 {
+  .hero_content .hero_texts > div > span:nth-child(2) {
     font-size: 48px;
   }
 }

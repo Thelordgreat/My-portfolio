@@ -8,7 +8,7 @@ import vector from "../../Images/Vector.png";
 const Contact = () => {
   return (
     <section>
-      <div className="contact_container">
+      <div className="contact_container" id="contact">
         <h2>Contact Me</h2>
 
         <div className="contact_content">
