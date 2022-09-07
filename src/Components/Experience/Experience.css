@@ -21,37 +21,38 @@
 .experience_content > div {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  /* overflow-y: scroll; */
 }
 
-.experience_content > div .long_line{
-    position: absolute;
-    height: 70%;
-    background-color: #F8F9FA;
-    width: 4px;
-    left: 650px;
-    border-radius: 10px;
-    opacity: .5;
-    z-index: 2;
+.experience_content > div .long_line {
+  position: absolute;
+  height: 70%;
+  background-color: #f8f9fa;
+  width: 4px;
+  left: 650px;
+  border-radius: 10px;
+  opacity: 0.5;
+  z-index: 2;
 }
 
-.experience_content > div .short_line{
-    position: absolute;
-    height: 4px;
-    background-color: #F8F9FA;
-    width: 180px;
-    left: 570px;
-    top: 160px;
-    border-radius: 10px;
-    opacity: .5;
+.experience_content > div .short_line {
+  position: absolute;
+  height: 4px;
+  background-color: #f8f9fa;
+  width: 180px;
+  left: 570px;
+  top: 158px;
+  border-radius: 10px;
+  opacity: 0.5;
 }
 
-.experience_content > div .short_line:nth-child(2){
-    top: 326px;
+.experience_content > div .short_line:nth-child(2) {
+  top: 344px;
 }
 
-.experience_content > div .short_line:nth-child(3){
-    top: 500px;
+.experience_content > div .short_line:nth-child(3) {
+  top: 530px;
 }
 
 .experience_content > div .experience {
@@ -84,12 +85,12 @@
   z-index: 2;
 }
 
-.experience_content > div .btn{
-    margin: 3rem auto 0;
+.experience_content > div .btn {
+  margin: 3rem auto 0;
 }
 
 .experience_content > div .btn a {
-  background-color: #343A40;
+  background-color: #343a40;
   color: #ffffff;
   padding: 10px 22px;
   border-radius: 8px;
