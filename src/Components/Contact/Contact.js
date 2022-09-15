@@ -6,6 +6,26 @@ import { FaRegEnvelope } from "react-icons/fa";
 import vector from "../../Images/Vector.png";
 
 const Contact = () => {
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "YOUR_SERVICE_ID",
+  //       "YOUR_TEMPLATE_ID",
+  //       form.current,
+  //       "YOUR_PUBLIC_KEY"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+
   return (
     <section>
       <div className="contact_container" id="contact">
