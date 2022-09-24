@@ -1,13 +1,14 @@
 .skill_content {
   width: 80%;
-  margin: auto;
+  margin:3rem auto;
+  user-select: none;
 }
 
 .skill_content h2 {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 40px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .skill_content .skill_slider {

@@ -4,7 +4,7 @@ import site from "../../Images/webpage.png";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id='portfolio'>
       <div className="portfolio_content">
         <h2>Portfolio</h2>
 

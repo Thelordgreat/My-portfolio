@@ -1,6 +1,7 @@
 import React from "react";
 import "./Experience.css";
 import arrow from "../../Images/carbon_download.png";
+import CV from "../../Images/CV.pdf";
 
 const Experience = () => {
   return (
@@ -49,7 +50,7 @@ const Experience = () => {
 
 
           <div className="btn">
-            <a href="#download">Download CV <img src={arrow} alt="" /></a>
+            <a href={CV} download>Download CV <img src={arrow} alt="" /></a>
           </div>
         </div>
       </div>
