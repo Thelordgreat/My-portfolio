@@ -1,4 +1,5 @@
-.hero_content {
+/*========= Desktop layout styling ============= */
+.hero_content_desktop {
   max-width: 85%;
   margin: 7rem auto;
   display: flex;
@@ -8,38 +9,38 @@
   color: #f8f9fa;
 }
 
-.hero_content .hero_texts > div:nth-child(1) {
+.hero_content_desktop .hero_texts > div:nth-child(1) {
   display: flex;
   flex-direction: column;
 }
 
-.hero_content .hero_texts > div > span:nth-child(2) {
+.hero_content_desktop .hero_texts > div > span:nth-child(2) {
   font-size: 58px;
   font-weight: 600;
 }
 
-.hero_content .hero_texts > div > span:nth-child(1),
-.hero_content .hero_texts > div > span:nth-child(3) {
+.hero_content_desktop .hero_texts > div > span:nth-child(1),
+.hero_content_desktop .hero_texts > div > span:nth-child(3) {
   font-size: 28px;
   font-weight: 400;
 }
 
-.hero_content .hero_texts p {
+.hero_content_desktop .hero_texts p {
   margin: 1rem 0;
 }
 
-.hero_content .hero_texts h4{
+.hero_content_desktop .hero_texts h4 {
   margin-bottom: 1rem;
 }
 
-.hero_content .hero_texts div .social_icons {
+.hero_content_desktop .hero_texts div .social_icons {
   width: 25%;
   display: flex;
   justify-content: space-between;
   margin-top: 0.3rem;
 }
 
-.hero_content .hero_texts div .social_icons .icon {
+.hero_content_desktop .hero_texts div .social_icons .icon {
   border: 1px solid;
   font-size: 26px;
   padding: 4px;
@@ -47,7 +48,7 @@
   cursor: pointer;
 }
 
-.hero_content .hero_img_shadow {
+.hero_content_desktop .hero_img_shadow {
   border-radius: 2rem 2rem 0 0;
   width: 98%;
   height: 390px;
@@ -55,92 +56,117 @@
   background-color: #343a40;
 }
 
-.hero_content .hero_img_shadow img {
+.hero_content_desktop .hero_img_shadow img {
   width: 100%;
   height: 500px;
   transform: translateY(-110px);
 }
 
 @media (max-width: 960px) {
-  .hero_content {
+  .hero_content_desktop {
     max-width: 95%;
     gap: 0;
   }
 
-  .hero_content .hero_texts {
+  .hero_content_desktop .hero_texts {
     width: 85%;
   }
 
-  .hero_content .hero_texts > div > span:nth-child(2) {
+  .hero_content_desktop .hero_texts > div > span:nth-child(2) {
     font-size: 48px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero_content {
+  .hero_content_desktop {
     flex-direction: column;
     max-width: 95%;
     gap: 6rem;
   }
 
-  .hero_content .hero_img_shadow {
+  .hero_content_desktop .hero_img_shadow {
     max-width: 80%;
   }
 }
 
-/* @media (max-width: 650px) {
-  .hero_content {
+@media (min-width: 650px) {
+  .hero_content_mobile{
+    display: none;
+  }
+}
+
+/*======== Mobile Layout styling =========*/
+
+@media (max-width: 650px) {
+  .hero_content_desktop {
+    display: none;
+  }
+
+  .hero_content_mobile {
+    display: block;
+    max-width: 100%;
+    display: flex;
+    margin-top: 7rem;
+  }
+
+  .text_container{
     max-width: 98%;
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-areas:
-    "a a"
-    "b b"
-    "c c"
-    "d d"
-    "e e"
-    "f f"
-    ;
-    grid-gap: 10px;
+    padding: .5rem;
+    margin: auto;
   }
 
-  .hero_texts h4 {
-    grid-area: a;
-  }
-  .hero_texts h1 {
-    grid-area: b;
+  .text_container .intro{
+    display: flex;
+    flex-direction: column;
   }
 
-  .hero_texts h4.title {
-    grid-area: c;
+  .text_container .intro span:nth-child(1),
+  .text_container .intro span:nth-child(3)
+  {
+    font-size: 24px;
+    font-weight: 400;
   }
 
-  .hero_content .hero_img_shadow {
-    grid-area: d;
+  .text_container .intro span:nth-child(2){
+    font-size: 45px;
+    font-weight: 600;
   }
 
-  .hero_texts p {
-    grid-area: e;
+  .text_container .hero_img_shadow {
+    scale: .9;
+    margin-left: auto;
+    height: 340px;
+    max-width: 78%;
+    border: 1px solid;
+    margin-bottom: 1rem;
+    background-color: #343a40;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 7rem;
   }
 
-  .hero_texts .bottom {
-    grid-area: f;
-  }
-} */
-
-@media (max-width: 420px) {
-  .hero_content {
-    max-width: 98%;
+  .text_container .hero_img_shadow img {
+    width: 100%;
+    height: 450px;
+    transform: translateY(-111px);
   }
 
-  .hero_content .hero_texts {
-    width: 97%;
-  }
-  .hero_content .hero_texts h1 {
-    font-size: 48px;
+  .text_container .bottom{
+    text-align: center;
+    margin-top: 1rem;
   }
 
-  .hero_content .hero_img_shadow {
-    max-width: 88%;
+  .social_icons {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem auto;
+  }
+
+  .social_icons .icon {
+    border: 1px solid;
+    font-size: 26px;
+    padding: 4px;
+    border-radius: 100%;
+    cursor: pointer;
   }
 }
