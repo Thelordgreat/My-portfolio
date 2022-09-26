@@ -1,30 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.css";
 import { BsHouseDoor } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaRegEnvelope } from "react-icons/fa";
 import vector from "../../Images/Vector.png";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const form = useRef();
 
-  //   emailjs
-  //     .sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       form.current,
-  //       "YOUR_PUBLIC_KEY"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_9asr2w1",
+      "template_kb656fo",
+      form.current,
+      "DwPdl7kceozGrckrp"
+    );
+    e.target.reset();
+  };
 
   return (
     <section>
@@ -48,23 +43,34 @@ const Contact = () => {
           </div>
 
           <div className="contact_form">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="inputs">
-                <input type="text" placeholder="Enter Name" />
-                <input type="email" placeholder="Enter Email" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  required
+                />
               </div>
 
               <input
                 type="text"
+                name="message"
                 placeholder="Type Message"
                 className="message"
               />
 
-              <div className="button">
-                <a href="/" className="btn">
+              <div className="btn_area">
+                <button type="submit" className="btn">
                   Send Message
                   <img src={vector} alt="" />
-                </a>
+                </button>
               </div>
             </form>
           </div>

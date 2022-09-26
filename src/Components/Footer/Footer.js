@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../Images/Logo.png";
-import { FiTwitter, FiInstagram, FiGithub } from "react-icons/fi";
+import { FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
 import { Link } from "react-scroll";
 
 const Footer = () => {
@@ -49,13 +49,18 @@ const Footer = () => {
         <div className="fifth">
           <h3 className="socials">Socials</h3>
           <div className="socials_icons">
-            <a href="https://twitter.com">
+            <a href="https://twitter.com/thelordgreat" target={" _blank "}>
               <FiTwitter className="icon" />
             </a>
-            <a href="https://instagram.com">
-              <FiInstagram className="icon" />
+
+            <a
+              href="https://www.linkedin.com/in/great-okafor-348b39220/"
+              target={" _blank "}
+            >
+              <FiLinkedin className="icon" />
             </a>
-            <a href="https://github.com">
+
+            <a href="https://github.com/Thelordgreat" target={" _blank "}>
               <FiGithub className="icon" />
             </a>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Hero from "../../Images/hero image 1.png";
-import { FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
+import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -25,9 +25,18 @@ const Header = () => {
           <div className="bottom">
             <h4>Find Me On</h4>
             <div className="social_icons">
-              <FiInstagram className="icon" />
-              <FiTwitter className="icon" />
-              <FiGithub className="icon" />
+              <a
+                href="https://www.linkedin.com/in/great-okafor-348b39220/"
+                target={" _blank "}
+              >
+                <FiLinkedin className="icon" />
+              </a>
+              <a href="https://twitter.com/thelordgreat" target={" _blank "}>
+                <FiTwitter className="icon" />
+              </a>
+              <a href="https://github.com/Thelordgreat" target={" _blank "}>
+                <FiGithub className="icon" />
+              </a>
             </div>
           </div>
         </div>
@@ -37,7 +46,7 @@ const Header = () => {
         </div>
       </div>
 
-          {/*====== Mobile Layout =======*/}
+      {/*====== Mobile Layout =======*/}
       <div className="hero_content_mobile">
         <div className="text_container">
           <div className="intro">
@@ -60,12 +69,11 @@ const Header = () => {
           <div className="bottom">
             <h4>Find Me On</h4>
             <div className="social_icons">
-              <FiInstagram className="icon" />
+              <FiLinkedin className="icon" />
               <FiTwitter className="icon" />
               <FiGithub className="icon" />
             </div>
           </div>
-
         </div>
       </div>
     </section>
