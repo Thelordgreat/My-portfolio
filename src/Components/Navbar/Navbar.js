@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../../Images/Logo.png";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Toggle from "../Toggle/Toggle";
 
 const Navbar = () => {
   return (
@@ -28,9 +29,7 @@ const Navbar = () => {
         </ul>
 
         <div className="btn_container">
-          <a href="/" className="theme_toggle">
-            Light theme
-          </a>
+          <Toggle/>
           <a href="#contact" className="contact_btn">
             Contact
           </a>

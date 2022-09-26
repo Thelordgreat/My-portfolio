@@ -52,17 +52,9 @@
 }
 
 .btn_container{
-  width: 22%;
   display: flex;
   gap: 1.5rem;
-}
-
-.theme_toggle{
-  background-color: transparent;
-  border: 2px solid #F8F9FA;
-  color: #ffffff;
-  padding: 8px 22px;
-  border-radius: 10px;
+  align-items: center;
 }
 
 .contact_btn {

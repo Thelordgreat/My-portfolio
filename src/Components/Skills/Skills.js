@@ -5,6 +5,7 @@ import Reactimg from "../../Images/react.png";
 import Html from "../../Images/html.png";
 import Js from "../../Images/js.png";
 import Nextjs from "../../Images/nextjs.png";
+import Bootstrap from "../../Images/bootstrap.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -43,7 +44,7 @@ const Skills = () => {
           </SwiperSlide>
 
           <SwiperSlide className="slide">
-            <img src={Reactimg} alt="React" />
+            <img src={Bootstrap} alt="React" />
           </SwiperSlide>
 
           <div></div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import logo from "../../Images/Logo.png";
 import { FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -16,15 +16,15 @@ const Footer = () => {
         <div className="second">
           <h3>Resources</h3>
           <ul>
-            <Link href="/contact">
+            <a href="#portfolio">
               <li>Portfolio</li>
-            </Link>
-            <Link href="/contact">
+            </a>
+            <a href="#experience">
               <li>Resume</li>
-            </Link>
-            <Link href="/contact">
+            </a>
+            <a href="#contact">
               <li>Contact</li>
-            </Link>
+            </a>
           </ul>
         </div>
 

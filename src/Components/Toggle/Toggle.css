@@ -1,0 +1,13 @@
+.theme_toggle {
+  background-color: transparent;
+  border: 2px solid #f8f9fa;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.theme_toggle img {
+  scale: 0.7;
+}
