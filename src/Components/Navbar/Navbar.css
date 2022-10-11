@@ -98,11 +98,7 @@
 
   .contact_btn {
     display: none;
-  }
-
-  .theme_toggle{
-    display: none;
-  }
+  } 
 
   .nav_content .links {
     flex-direction: column;

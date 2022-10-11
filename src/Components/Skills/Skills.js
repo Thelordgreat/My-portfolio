@@ -25,7 +25,17 @@ const Skills = () => {
           modules={[Pagination]}
           className="skill_slider"
           spaceBetween={40}
-          slidesPerView={3}
+
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            300: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            }
+          }}
         >
           <SwiperSlide className="slide">
             <img src={Reactimg} alt="React" />

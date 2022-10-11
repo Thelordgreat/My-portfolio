@@ -56,7 +56,7 @@ const Header = () => {
           </div>
 
           <div className="hero_img_shadow">
-            <img src={Hero} alt="" />
+            <img src={Hero} alt="my-pic" />
           </div>
 
           <p>

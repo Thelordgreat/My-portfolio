@@ -11,3 +11,10 @@
 .theme_toggle img {
   scale: 0.7;
 }
+
+
+@media (max-width: 720px) {
+  .toggle{
+    display: none;
+  }
+}

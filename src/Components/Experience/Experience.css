@@ -95,3 +95,23 @@
   padding: 10px 22px;
   border-radius: 8px;
 }
+
+
+@media (max-width: 720px) {
+  .experience_content{
+    width: 95%;
+  }
+
+  .experience_content h2{
+    font-size: 35px;
+  }
+
+  .experience_content > div .experience .description{
+    padding: 1rem;
+  }
+
+  .experience_content > div .experience .company_space > .company{
+    padding: 1rem;
+    transform: translateX(18px);
+  }
+}

@@ -10,10 +10,10 @@ const Experience = () => {
         <h2>Experience</h2>
 
         <div>
-          <div className="long_line"></div>
+          {/* <div className="long_line"></div>
           <div className="short_line"></div>
           <div className="short_line"></div>
-          <div className="short_line"></div>
+          <div className="short_line"></div> */}
 
           <div className="experience">
             <div className="description">

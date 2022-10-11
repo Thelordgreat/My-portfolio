@@ -232,6 +232,10 @@
     grid-template-columns: 0.7fr 1fr;
   }
 
+  .contact_content .contact_boxes .box:nth-child(2) {
+    transform: translateX(-1rem);
+  }
+
   .contact_content .contact_boxes .box:nth-child(3) {
     transform: translateX(6.5rem);
   }
